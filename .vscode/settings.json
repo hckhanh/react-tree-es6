@@ -1,0 +1,17 @@
+// Place your settings in this file to overwrite default and user settings.
+{
+    // The number of spaces a tab is equal to.
+    "editor.tabSize": 2,
+
+    // When enabled, will trim trailing whitespace when you save a file.
+    "files.trimTrailingWhitespace": true,
+
+    // Configure glob patterns for excluding files and folders in searches. Inherits all glob patterns from the files.exclude setting.
+    "search.exclude": {
+        "**/node_modules": true,
+        "dist": true
+    },
+
+    // disable ESLint in Ember.js project
+    "eslint.enable": false
+}

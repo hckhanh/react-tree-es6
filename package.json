@@ -1,0 +1,44 @@
+{
+  "name": "react-tree",
+  "version": "0.0.0",
+  "description": "The react component to present data as a tree",
+  "main": ".",
+  "scripts": {
+    "start": "webpack-dev-server --port=3000",
+    "test": "."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hckhanh/react-tree.git"
+  },
+  "keywords": [
+    "react",
+    "js",
+    "tree",
+    "react-tree",
+    "tree-view"
+  ],
+  "author": "Khanh Hoang (https://profiles.udacity.com/u/khanhhoang)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hckhanh/react-tree/issues"
+  },
+  "homepage": "https://github.com/hckhanh/react-tree#readme",
+  "peerDependencies": {
+    "react": "^15.3.0",
+    "react-dom": "^15.3.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.13.2",
+    "babel-loader": "^6.2.4",
+    "babel-preset-es2015": "^6.13.2",
+    "babel-preset-react": "^6.11.1",
+    "jstree": "^3.3.1",
+    "webpack": "^1.13.1",
+    "webpack-dev-server": "^1.14.1"
+  },
+  "dependencies": {
+    "react": "^15.3.0",
+    "react-dom": "^15.3.0"
+  }
+}
