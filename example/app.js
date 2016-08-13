@@ -1,5 +1,3 @@
-import 'jstree/dist/themes/default/style.min.css';
-
 import ReactDOM from 'react-dom';
 import ReactTree from '../lib/react-tree';
 
@@ -11,7 +9,7 @@ const PROJECT_TREE = [
       selected: true
     },
     children: [
-      'settings.json'
+      { text: 'settings.json', icon: 'jstree-file' }
     ]
   },
   {
@@ -20,8 +18,8 @@ const PROJECT_TREE = [
       opened: true,
     },
     children: [
-      'app.js',
-      'index.html'
+      { text: 'app.js', icon: 'jstree-file' },
+      { text: 'index.html', icon: 'jstree-file' }
     ]
   },
   {
@@ -37,12 +35,12 @@ const PROJECT_TREE = [
     text: 'node_modules',
     children: []
   },
-  '.babelrc',
-  '.gitignore',
-  'jsconfig.json',
-  'LICENSE',
-  'package.json',
-  'webpack.config.js'
+  { text: '.babelrc', icon: 'jstree-file' },
+  { text: '.gitignore', icon: 'jstree-file' },
+  { text: 'jsconfig.json', icon: 'jstree-file' },
+  { text: 'LICENSE', icon: 'jstree-file' },
+  { text: 'package.json', icon: 'jstree-file' },
+  { text: 'webpack.config.js', icon: 'jstree-file' }
 ];
 
 ReactDOM.render(<ReactTree tree={PROJECT_TREE} />, document.getElementById('app'));
