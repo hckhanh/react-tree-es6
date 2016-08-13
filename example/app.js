@@ -1,46 +1,29 @@
 import ReactDOM from 'react-dom';
 import ReactTree from '../lib/react-tree';
+import { PROJECT_TREE } from './project-tree';
 
-const PROJECT_TREE = [
-  {
-    text: '.vscode',
-    state: {
-      opened: true,
-      selected: true
-    },
-    children: [
-      { text: 'settings.json', icon: 'jstree-file' }
-    ]
-  },
-  {
-    text: 'example',
-    state: {
-      opened: true,
-    },
-    children: [
-      { text: 'app.js', icon: 'jstree-file' },
-      { text: 'index.html', icon: 'jstree-file' }
-    ]
-  },
-  {
-    text: 'lib',
-    state: {
-      opened: true,
-    },
-    children: [
-      'react-tree.js'
-    ]
-  },
-  {
-    text: 'node_modules',
-    children: []
-  },
-  { text: '.babelrc', icon: 'jstree-file' },
-  { text: '.gitignore', icon: 'jstree-file' },
-  { text: 'jsconfig.json', icon: 'jstree-file' },
-  { text: 'LICENSE', icon: 'jstree-file' },
-  { text: 'package.json', icon: 'jstree-file' },
-  { text: 'webpack.config.js', icon: 'jstree-file' }
-];
+class ExampleApp extends React.Component {
+  constructor(props) {
+    super(props);
 
-ReactDOM.render(<ReactTree tree={PROJECT_TREE} />, document.getElementById('app'));
+    this.state = { items: [] };
+
+    this.handleOnChanged = this.handleOnChanged.bind(this);
+  }
+  handleOnChanged(changedItems) {
+    this.setState({
+      items: changedItems.map(item => item.text).join(', ')
+    });
+  }
+
+  render() {
+    return (
+      <div>
+        <ReactTree tree={PROJECT_TREE} onChanged={this.handleOnChanged}/>
+        <div>Selected items: {this.state.items}</div>
+      </div>
+    );
+  }
+}
+
+ReactDOM.render(<ExampleApp />, document.getElementById('app'));
