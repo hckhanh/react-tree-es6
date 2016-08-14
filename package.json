@@ -1,6 +1,6 @@
 {
   "name": "react-tree",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "The react component to present data as a tree",
   "main": "./lib/react-tree.js",
   "scripts": {
