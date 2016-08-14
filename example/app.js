@@ -13,6 +13,7 @@ class ExampleApp extends React.Component {
 
     this.handleOnChanged = this.handleOnChanged.bind(this);
   }
+
   handleOnChanged(changedItems) {
     this.setState({
       items: changedItems.map(item => item.text).join(', ')
