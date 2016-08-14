@@ -1,12 +1,15 @@
 # react-tree-es6
 
 [![Build Status](https://travis-ci.org/hckhanh/react-tree-es6.svg?branch=master)](https://travis-ci.org/hckhanh/react-tree-es6)
+[![dependencies Status](https://david-dm.org/hckhanh/react-tree-es6/status.svg)](https://david-dm.org/hckhanh/react-tree-es6)
+[![Coverage Status](https://coveralls.io/repos/github/hckhanh/react-tree-es6/badge.svg)](https://coveralls.io/github/hckhanh/react-tree-es6)
 
 The wrapper of jsTree (jstree.com) for React
 
 ## Getting Started
 
 If you want to find a **tree view** component for React, this module is what you need.
+It supports **ES6** and backward compatible with **ES5**.
 
 ## Installation
 
@@ -144,3 +147,7 @@ If user want to apply css for **ReactTree**, consider to include these files:
 
 * node_modules/jstree/dist/themes/default/style.min.css
 * node_modules/jstree/dist/themes/default-dark/style.min.css
+
+## License
+
+MIT (<http://www.opensource.org/licenses/mit-license.php>)
