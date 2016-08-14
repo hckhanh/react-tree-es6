@@ -22,6 +22,6 @@ before_deploy:
 
 deploy:
   provider: npm
-  api_key: "$NPM_API_KEY"
-    on:
-      tags: true
+  api_key: $NPM_API_KEY
+  on:
+    tags: true
