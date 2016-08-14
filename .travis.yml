@@ -1,28 +1,30 @@
 language: node_js
 node_js:
-  - "node"
+- node
 
 sudo: false
 
 cache:
   directories:
-    - node_modules
+  - node_modules
 
 before_install:
-  - npm config set spin false
+- npm config set spin false
 
 install:
-  - npm install
+- npm install
 
 script:
-  - npm test
+- npm test
 
 before_deploy:
-  - npm run build
+- npm run build
 
 deploy:
   provider: npm
-  email: "hoangchaukhanh93@gmail.com"
-  api_key: $NPM_API_KEY
+  email: hoangchaukhanh93@gmail.com
+  api_key:
+    secure: KmUifEkqF2ZFi+JJ9DtjZTJAeXftmfwcOcQed+rg9wqQsySvisuxJDzozSAVK4L52+WBAl32d7QGP0BADfTXQCVGuLkPo8RzBz0jIlwk0qsmYETKEzUkFYk63zCmJQZU4vWw0edWnwftT6sqtDdoPXio7m07fCPta83wjEYUA4l+HmNHHpI6vwoqa+G1QqG2QOUdBxyXYMobafFEpZGJIcAPZaqae8G1zkf8Awsf6SEmKai4lOwB5s+V06mIr+d884tQR9LsyXL+GqElgKq5miYYM8+smvR/30j8pnxEcS4XkPt4Covt+4QQe4NoNIp+5tZdQkvs/1rAAQUsC+mlDsiMgXS8NDLGfl2PxdjAslc08qmlxkzzs3qD6FgwJLPs1I4EGfrYXf3vdrQ6jUcwoT61hdCpdupr8KpsVjtNO0ifzR3bDerOJvA+QLWlunWJXHjzu5QgA6+EBaFoat0OuuuQai6yWguQFAU6bCN/fUwbyCV2SckJ8OA1rlYgcX9PSPWeo4iASF7t1vg98BiSqlnVg/Ix9efar0+GDnrT9pIyj96r/aGoMj5ZA86dXK2vF+OaXSkcDEpmh4eBOqi6TxdEGlDmHJhKsA5RbwxbbWkhmFf4ixKEN6mlb4fJ5zaBW+VEpKXou0T92YAejJvELPPuzEYrSQTME3tdt3NggZ4=
   on:
     tags: true
+    repo: hckhanh/react-tree
