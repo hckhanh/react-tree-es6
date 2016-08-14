@@ -1,6 +1,6 @@
-# react-tree
+# react-tree-es6
 
-[![Build Status](https://travis-ci.org/hckhanh/react-tree.svg?branch=master)](https://travis-ci.org/hckhanh/react-tree)
+[![Build Status](https://travis-ci.org/hckhanh/react-tree-es6.svg?branch=master)](https://travis-ci.org/hckhanh/react-tree-es6)
 
 The wrapper of jsTree (jstree.com) for React
 
@@ -11,7 +11,7 @@ If you want to find a **tree view** component for React, this module is what you
 ## Installation
 
 ```bash
-npm install --save react-tree
+npm install --save react-tree-es6
 ```
 
 ## Usage
@@ -19,7 +19,7 @@ npm install --save react-tree
 import/require `ReactTree` to your React source code:
 
 ```js
-import ReactTree from 'react-tree';
+import ReactTree from 'react-tree-es6';
 ```
 
 ### tree

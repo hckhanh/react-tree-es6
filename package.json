@@ -1,7 +1,7 @@
 {
-  "name": "react-tree",
+  "name": "react-tree-es6",
   "version": "0.1.1",
-  "description": "The react component to present data as a tree",
+  "description": "The wrapper of jsTree (jstree.com) for React",
   "main": "./lib/react-tree.js",
   "scripts": {
     "start": "webpack-dev-server --port=3000",
@@ -10,21 +10,23 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hckhanh/react-tree.git"
+    "url": "git+https://github.com/hckhanh/react-tree-es6.git"
   },
   "keywords": [
     "react",
     "js",
     "tree",
+    "es6",
     "react-tree",
+    "react-tree-es6",
     "tree-view"
   ],
   "author": "Khanh Hoang (https://profiles.udacity.com/u/khanhhoang)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/hckhanh/react-tree/issues"
+    "url": "https://github.com/hckhanh/react-tree-es6/issues"
   },
-  "homepage": "https://github.com/hckhanh/react-tree#readme",
+  "homepage": "https://github.com/hckhanh/react-tree-es6#readme",
   "peerDependencies": {
     "react": "^15.3.0",
     "react-dom": "^15.3.0"
@@ -35,6 +37,8 @@
     "babel-preset-es2015": "^6.13.2",
     "babel-preset-react": "^6.11.1",
     "css-loader": "^0.23.1",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "file-loader": "^0.9.0",
     "gulp": "^3.9.1",
     "gulp-babel": "^6.1.2",
     "jest-cli": "^14.1.0",
