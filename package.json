@@ -1,6 +1,6 @@
 {
   "name": "react-tree-es6",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "The wrapper of jsTree (jstree.com) for React",
   "main": "./lib/react-tree.js",
   "scripts": {
