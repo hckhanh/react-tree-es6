@@ -13,5 +13,16 @@ describe('ReactTree', () => {
     const reactTreeNode = ReactDOM.findDOMNode(reactTree);
 
     expect(reactTreeNode.textContent).not.toBeNull();
+
+  });
+
+  it('should run the handle function of onChanged event', () => {
+    const handleOnChanged = jest.fn();
+
+    const reactTree = TestUtils.renderIntoDocument(
+      <ReactTree tree={PROJECT_TREE} onChanged={handleOnChanged} />
+    );
+
+    expect(handleOnChanged).toBeCalled();
   });
 });
