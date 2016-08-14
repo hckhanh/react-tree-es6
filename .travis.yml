@@ -22,6 +22,7 @@ before_deploy:
 
 deploy:
   provider: npm
+  email: "hoangchaukhanh93@gmail.com"
   api_key: $NPM_API_KEY
   on:
     tags: true
