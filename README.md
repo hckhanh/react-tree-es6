@@ -3,6 +3,7 @@
 [![Build Status](https://travis-ci.org/hckhanh/react-tree-es6.svg?branch=master)](https://travis-ci.org/hckhanh/react-tree-es6)
 [![codecov](https://codecov.io/gh/hckhanh/react-tree-es6/branch/master/graph/badge.svg)](https://codecov.io/gh/hckhanh/react-tree-es6)
 [![dependencies Status](https://david-dm.org/hckhanh/react-tree-es6/status.svg)](https://david-dm.org/hckhanh/react-tree-es6)
+[![CII Best Practices](https://bestpractices.coreinfrastructure.org/projects/288/badge)](https://bestpractices.coreinfrastructure.org/projects/288)
 
 The wrapper of jsTree (jstree.com) for React
 
