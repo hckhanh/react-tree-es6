@@ -5,6 +5,10 @@ import ReactDOM from 'react-dom';
 import ReactTree from '../src/react-tree';
 import { PROJECT_TREE } from './project-tree';
 
+const CORE_DATA = {
+  data: PROJECT_TREE
+};
+
 class ExampleApp extends React.Component {
   constructor(props) {
     super(props);
@@ -23,7 +27,7 @@ class ExampleApp extends React.Component {
   render() {
     return (
       <div>
-        <ReactTree tree={PROJECT_TREE} onChanged={this.handleOnChanged} />
+        <ReactTree core={CORE_DATA} onChanged={this.handleOnChanged} />
         <div>Selected items: {this.state.items}</div>
       </div>
     );
