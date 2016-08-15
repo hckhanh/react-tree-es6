@@ -17,7 +17,6 @@ describe('ReactTree', () => {
     const reactTreeNode = ReactDOM.findDOMNode(reactTree);
 
     expect(reactTreeNode.textContent).not.toBeNull();
-    expect(ReactTree.propTypes.core).toBeDefined();
   });
 
   it('should run the handle function of onChanged event', () => {
@@ -36,5 +35,13 @@ describe('ReactTree', () => {
     };
 
     expect(renderReactTree).toThrowError(TypeError);
+  });
+
+  it('should validation of "core" prop is defined', () => {
+    const ERROR_CORE = { data: 1 };
+
+    TestUtils.renderIntoDocument(<ReactTree core={ERROR_CORE} />);
+
+    expect(ReactTree.propTypes.core).toBeDefined();
   });
 });
