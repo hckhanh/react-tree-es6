@@ -9,7 +9,7 @@ npm-debug.log*
 coverage
 
 # tests
-__tests__
+test
 
 # settings
 .vscode
