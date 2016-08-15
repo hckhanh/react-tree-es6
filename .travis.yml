@@ -10,6 +10,7 @@ cache:
 
 before_install:
 - npm config set spin false
+- npm install -g codecov
 
 install:
 - npm install
