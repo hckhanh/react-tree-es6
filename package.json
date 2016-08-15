@@ -54,6 +54,7 @@
   },
   "jest": {
     "automock": false,
+    "testRegex": "test/.*\\.js$",
     "coverageDirectory": "coverage/",
     "collectCoverage": true
   }

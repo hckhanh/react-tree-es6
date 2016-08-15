@@ -25,4 +25,12 @@ describe('ReactTree', () => {
 
     expect(handleOnChanged).toBeCalled();
   });
+
+  it('should show error when tree is not object or array', () => {
+    const reactTree = TestUtils.renderIntoDocument(
+      <ReactTree tree={1} />
+    );
+
+    expect(ReactTree.propTypes.tree).toBeDefined();
+  });
 });
