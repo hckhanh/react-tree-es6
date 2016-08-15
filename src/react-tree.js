@@ -14,9 +14,7 @@ export default class ReactTree extends React.Component {
         }
       })
       .jstree({
-        core: {
-          data: this.props.tree
-        }
+        core: this.props.core
       });
   }
 
@@ -26,9 +24,13 @@ export default class ReactTree extends React.Component {
 }
 
 ReactTree.propTypes = {
-  tree: function (props, propName, componentName) {
-    const prop = props[propName];
-    if (!Array.isArray(prop) && typeof (prop) !== 'object')
-      return new TypeError(`Invalid prop \`tree\`: tree must be an object or array`)
+  core: function (props, propName, componentName) {
+    const core = props[propName];
+    if (!core || typeof (core) !== 'object')
+      return new TypeError(`Invalid prop \`core\`: must follow jsTree API, read more https://www.jstree.com/api/#/?q=core`);
+
+    const data = core.data;
+    if (!Array.isArray(data) && typeof (data) !== 'object')
+      throw new TypeError(`Invalid object \`core.data\`: must be array of object of jsTree JSON data, read more https://www.jstree.com/docs/json`);
   }
 };

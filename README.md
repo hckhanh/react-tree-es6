@@ -10,7 +10,7 @@ The wrapper of jsTree (jstree.com) for React
 ## Getting Started
 
 If you want to find a **tree view** component for React, this module is what you need.
-It supports **ES6** and backward compatible with **ES5**.
+**It supports ES6 and backward compatible with ES5.**
 
 ## Installation
 
@@ -26,27 +26,33 @@ import/require `ReactTree` to your React source code:
 import ReactTree from 'react-tree-es6';
 ```
 
-### tree
+### core
 
-**tree** is the node object or and array of node object. This is an example of data of a node:
+`core` is the jsTree object contains basic data and configurations of the tree.
+This is an example of `core` object:
 
 ```js
 {
-  text: 'Root node 2',
-  state: {
-    opened: true,
-    selected: true
-  },
-  children: [
+  data: [ // data can be an array or object.
+    'Simple root node',
     {
-      text: 'Child 1'
-    },
-    'Child 2'
+      text: 'Root node 2',
+      state: {
+        opened: true,
+        selected: true
+      },
+      children: [
+        {
+          text: 'Child 1'
+        },
+        'Child 2'
+      ]
+    }
   ]
 }
 ```
 
-Here is the full structure of a node:
+As you know, a tree has one or many nodes, here is the full structure of a node:
 
 ```js
 // Alternative format of the node (id & parent are required)
@@ -65,54 +71,60 @@ Here is the full structure of a node:
 }
 ```
 
-You can define a tree and then parse it to `tree` property:
+You can define a `core` object and then parse it to `core` property:
 
 ```js
-const TREE = [
-  'Simple root node',
-  {
-    text: 'Root node 2',
-    state: {
-      opened: true,
-      selected: true
-    },
-    children: [
-      {
-        text: 'Child 1'
+const CORE = {
+  data: [
+    'Simple root node',
+    {
+      text: 'Root node 2',
+      state: {
+        opened: true,
+        selected: true
       },
-      'Child 2'
-    ]
-  }
-];
+      children: [
+        {
+          text: 'Child 1'
+        },
+        'Child 2'
+      ]
+    }
+  ]
+};
 
 class ExampleApp extends React.Component {
   render() {
-    return (<ReactTree tree={TREE} />);
+    return (<ReactTree core={CORE} />);
   }
 }
 ```
+
+> To make sure you can find what you need, go to [jsTree API](https://www.jstree.com/api) for more details.
 
 ### onChanged
 
 This is an event to handle when a node is clicked:
 
 ```js
-const TREE = [
-  'Simple root node',
-  {
-    text: 'Root node 2',
-    state: {
-      opened: true,
-      selected: true
-    },
-    children: [
-      {
-        text: 'Child 1'
+const CORE = {
+  data: [
+    'Simple root node',
+    {
+      text: 'Root node 2',
+      state: {
+        opened: true,
+        selected: true
       },
-      'Child 2'
-    ]
-  }
-];
+      children: [
+        {
+          text: 'Child 1'
+        },
+        'Child 2'
+      ]
+    }
+  ]
+};
 
 class ExampleApp extends React.Component {
   constructor(props) {
@@ -132,7 +144,7 @@ class ExampleApp extends React.Component {
   render() {
     return (
       <div>
-        <ReactTree tree={TREE} onChanged={this.handleOnChanged} />
+        <ReactTree core={CORE} onChanged={this.handleOnChanged} />
         <div>Selected items: {this.state.items}</div>
       </div>
     );
@@ -144,10 +156,36 @@ If you need detailed example, go to [example](example) folder.
 
 ### Themes
 
-If user want to apply css for **ReactTree**, consider to include these files:
+If user want to apply css for **ReactTree**, consider to include these files to your web app:
 
 * node_modules/jstree/dist/themes/default/style.min.css
 * node_modules/jstree/dist/themes/default-dark/style.min.css
+
+with additional options in `core` object, for instance with **default-dark** theme:
+
+```js
+const CORE = {
+  data: [
+    'Simple root node',
+    {
+      text: 'Root node 2',
+      state: {
+        opened: true,
+        selected: true
+      },
+      children: [
+        {
+          text: 'Child 1'
+        },
+        'Child 2'
+      ]
+    }
+  ],
+  themes: {
+    name: 'default-dark'
+  }
+};
+```
 
 ## License
 
