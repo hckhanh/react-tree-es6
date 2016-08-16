@@ -20,11 +20,21 @@ npm install --save react-tree-es6
 
 ## Usage
 
-import/require `ReactTree` to your React source code:
+import/require `ReactTree` in your source code:
 
 ```js
 import ReactTree from 'react-tree-es6';
 ```
+
+and add this component into your `render()` function:
+
+```js
+render() {
+  <ReactTree core={CORE} onChanged={this.handleOnChanged} />
+}
+```
+
+Go to [example](example) folder to get more details.
 
 ### core
 
@@ -71,7 +81,7 @@ As you know, a tree has one or many nodes, here is the full structure of a node:
 }
 ```
 
-You can define a `core` object and then parse it to `core` property:
+You can define a `core` object and then put it to `core` property:
 
 ```js
 const CORE = {
@@ -152,14 +162,12 @@ class ExampleApp extends React.Component {
 }
 ```
 
-If you need detailed example, go to [example](example) folder.
-
 ### Themes
 
 If user want to apply css for **ReactTree**, consider to include these files to your web app:
 
-* node_modules/jstree/dist/themes/default/style.min.css
-* node_modules/jstree/dist/themes/default-dark/style.min.css
+* node_modules/jstree/dist/themes/**default**/style.min.css
+* node_modules/jstree/dist/themes/**default-dark**/style.min.css
 
 with additional options in `core` object, for instance with **default-dark** theme:
 
