@@ -34,7 +34,7 @@ render() {
 }
 ```
 
-Go to [example](example) folder to get more details.
+**Go to [example](example) folder to get more details.**
 
 ### core
 
@@ -110,7 +110,7 @@ class ExampleApp extends React.Component {
 }
 ```
 
-> To make sure you can find what you need, go to [jsTree API](https://www.jstree.com/api) for more details.
+**To make sure you can find what you need, go to [jsTree API](https://www.jstree.com/api) for more details.**
 
 ### onChanged
 
