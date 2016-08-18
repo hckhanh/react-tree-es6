@@ -10,7 +10,7 @@ The wrapper of jsTree (jstree.com) for React
 ## Getting Started
 
 If you want to find a **tree view** component for React, this module is what you need.
-**It supports ES6 and backward compatible with ES5.**
+**It ONLY supports ES6 or above.**
 
 ## Installation
 
@@ -197,4 +197,4 @@ const CORE = {
 
 ## License
 
-MIT (<http://www.opensource.org/licenses/mit-license.php>)
+MIT
