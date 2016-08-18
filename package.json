@@ -5,9 +5,11 @@
   "main": "./lib/react-tree.js",
   "scripts": {
     "start": "webpack-dev-server --port=3000",
+    "start-docs":"gitbook serve",
     "test": "jest",
     "test-coverage": "jest && codecov",
-    "build": "babel src --out-dir lib"
+    "build": "babel src --out-dir lib",
+    "build-docs":"gitbook build"
   },
   "repository": {
     "type": "git",

@@ -1,3 +1,4 @@
 {
-  "root": "./book"
+  "root": "./book",
+  "version": "v1.1.0"
 }
