@@ -30,7 +30,7 @@ and add this component into your `render()` function:
 
 ```js
 render() {
-  <ReactTree core={CORE} onChanged={this.handleOnChanged} />
+  return (<ReactTree core={CORE} onChanged={this.handleOnChanged} />);
 }
 ```
 
