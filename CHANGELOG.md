@@ -1,8 +1,8 @@
 # Change Log
 
-## [v1.0.2](https://github.com/hckhanh/react-tree-es6/tree/HEAD)
+## [v1.1.0](https://github.com/hckhanh/react-tree-es6/tree/HEAD)
 
-[Full Changelog](https://github.com/hckhanh/react-tree-es6/compare/v1.0.1...v1.0.2)
+[Full Changelog](https://github.com/hckhanh/react-tree-es6/compare/v1.0.1...v1.1.0)
 
 **Implemented enhancements:**
 
