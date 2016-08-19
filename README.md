@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/hckhanh/react-tree-es6.svg?branch=master)](https://travis-ci.org/hckhanh/react-tree-es6)
 [![codecov](https://codecov.io/gh/hckhanh/react-tree-es6/branch/master/graph/badge.svg)](https://codecov.io/gh/hckhanh/react-tree-es6)
-[![bitHound Overall Score](https://www.bithound.io/github/hckhanh/react-tree-es6/badges/score.svg)](https://www.bithound.io/github/hckhanh/react-tree-es6)
+[![dependencies Status](https://david-dm.org/hckhanh/react-tree-es6/status.svg)](https://david-dm.org/hckhanh/react-tree-es6)
 [![CII Best Practices](https://bestpractices.coreinfrastructure.org/projects/288/badge)](https://bestpractices.coreinfrastructure.org/projects/288)
 
 If you want to find a **tree view** component for [React](https://facebook.github.io/react/), this module is what you need.
