@@ -9,7 +9,7 @@
     "test": "jest",
     "test-coverage": "jest && codecov",
     "build": "babel src --out-dir lib",
-    "build-docs":"gitbook build"
+    "build-docs":"gitbook build ./ ./docs"
   },
   "repository": {
     "type": "git",
