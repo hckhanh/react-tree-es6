@@ -9,7 +9,7 @@ If you want to find a **tree view** component for [React](https://facebook.githu
 
 ## Getting Started
 
-**It ONLY supports ES6 or above.** Read <https://hckhanh.github.io/react-tree-es6> for more details.
+**It ONLY supports ES6 and above.** Read <https://hckhanh.github.io/react-tree-es6> for more details.
 
 ## Installation
 
